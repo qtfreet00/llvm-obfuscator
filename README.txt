@@ -18,7 +18,7 @@ suggestions.
 
 How to Build:
 
-  $ git clone https://github.com/Qrilee/Obfuscator-LLVM.git
+  $ git clone https://github.com/Qrilee/llvm-obfuscator
   $ mkdir build
   $ cd build
   $ cmake -DCMAKE_BUILD_TYPE=Release ../Obfuscator-LLVM/
