@@ -43,3 +43,14 @@ https://github.com/obfuscator-llvm/obfuscator/wiki
      gcc&g++ 7.2.0
      
      cmake 3.8.0
+     
+##### Use:
+
+-mllvm -bcf -mllvm -fla -mllvm -sub -mllvm -sobf
+  
+##### Function:
+
+* Instructions Substitution -mllvm -sub
+* Bogus Control Flow -mllvm -bcf
+* Control Flow Flattening -mllvm -fla
+* String Obfuscation -mllvm -sobf
