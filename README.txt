@@ -1,4 +1,4 @@
-Low Level Virtual Machine (LLVM)
+#### Low Level Virtual Machine (LLVM)
 ================================
 
 This directory and its subdirectories contain source code for LLVM,
@@ -16,10 +16,20 @@ documentation setup.
 If you are writing a package for LLVM, see docs/Packaging.rst for our
 suggestions.
 
-How to Build:
+##### Wiki: 
+https://github.com/obfuscator-llvm/obfuscator/wiki
 
+##### Build:
   $ git clone https://github.com/Qrilee/llvm-obfuscator
   $ mkdir build
   $ cd build
   $ cmake -DCMAKE_BUILD_TYPE=Release ../Obfuscator-LLVM/
   $ make -j7
+  
+  Build pass for windows:
+     MinGW64 for Windows
+     Cmake 3.9 rc5 for Windows x64
+     
+  Build pass for linux:
+     gcc&g++ 7.2.0
+     cmake 3.8.0
