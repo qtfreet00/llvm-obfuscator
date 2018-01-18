@@ -32,7 +32,7 @@
 #include <cassert>
 #include <cstring>
 #include <cstdio>
-#ifdef _WINDOWS
+#if defined(_WIN32) || defined(_WINDOWS) || defined(_WIN64)
 # include <random>
 #endif // _WINDOWS
 
@@ -625,7 +625,7 @@ void CryptoUtils::populate_pool() {
 
 bool CryptoUtils::prng_seed() {
 	
-#if defined(_WINDOWS)
+#if defined(_WIN32) || defined(_WINDOWS) || defined(_WIN64)
 	std::random_device rd;
 	std::uniform_int_distribution<int> dist(0, 127);
 	for (int n = 0; n < 16; ++n) {
